@@ -9,11 +9,11 @@ choice = input("Do you want audio or video? ")
 
 if choice == "audio":
     a = yt.streams.filter(only_audio=True)
-    a[0].download(r"D:\Users\tsili\Downloads\Youtube Downloader\Audio")
+    a[0].download(r"your Path to download your audio")
 
 if choice == "video":
     v = yt.streams.get_highest_resolution()
-    v.download(r"D:\Users\tsili\Downloads\Youtube Downloader\Video")
+    v.download(r"your Path to download your video")
 
 else:
     print('Enter "audio" or "video"')
